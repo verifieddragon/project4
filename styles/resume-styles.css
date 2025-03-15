@@ -52,7 +52,7 @@ p {
 }
 
 body {
-    background-image: url('/verifieddragon/images/background.png');
+    background-color: #26355f;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
