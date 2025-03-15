@@ -1,0 +1,227 @@
+@import url("https://use.typekit.net/pos3sdz.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: #202020;
+}
+
+li,
+a,
+button {
+    font-family: "area-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: white;
+}
+
+.burger {
+    width: 40px;
+    height: auto;
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px -2px rgb(34, 34, 34);
+}
+
+.nav {
+    list-style: none;
+}
+
+.nav > li {
+    display: inline-block;
+    padding: 2px 20px;
+}
+
+.nav > li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav > li a:hover {
+    transition: all 0.3s ease 0s;
+    color: rgb(97, 97, 199)
+}
+
+.logo {
+    cursor: pointer;
+    width: 50px;
+    height: auto;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgb(97, 97, 199);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(97, 97, 199, 0.7);
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.button-container > button {
+    padding: 50px 50px;
+    font-size: 4rem;
+    margin: 10px;
+    margin-bottom: 10%;
+}
+
+.flex {
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+#intro-section .flex {
+    display: flex;
+    align-items: flex-start;
+}
+
+.portrait {
+    width: 30vw;
+    height: auto;
+    min-height: 20vh;
+    border-radius: 5%;
+    margin: 0 auto;
+}
+
+.text-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.text-section2 {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 10%;
+}
+
+h1 {
+    text-align: left;
+    font-family: "area-normal", sans-serif;
+    border-bottom: 2px solid #ffffff;
+    padding: 1%;
+    margin-bottom: 2%;
+    font-size: 2vw;
+    width: 100%;
+}
+
+.text-section2 > h1 {
+    text-align: center;
+    font-family: "area-normal", sans-serif;
+    border-bottom: 2px solid #ffffff;
+    padding: 1%;
+    margin-bottom: 2%;
+    width: 100%;
+}
+
+p {
+    text-align: left;
+    font-family: "area-normal", sans-serif;
+    font-size: 1.5vw;
+    padding: 1%;
+    line-height: 1.6;
+}
+
+@media screen and (max-width: 1000px) {
+    .flex {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 5%;
+    }
+
+    .portrait {
+        width: 80vw;
+        height: auto;
+        min-height: 20vh;
+        border-radius: 5%;
+        margin: 0 auto;
+    }
+
+    .text-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0 auto;
+        margin-top: 5%;
+    }
+    .text-section2 {
+        width: 91%;
+    }
+
+    h1 {
+        text-align: center;
+        font-family: "area-normal", sans-serif;
+        border-bottom: 2px solid #ffffff;
+        padding: 1%;
+        margin-bottom: 2%;
+        font-size: 2.5rem;
+    }
+
+    p {
+        text-align: center;
+        font-family: "area-normal", sans-serif;
+        font-size: 1rem;
+        padding: 1%;
+        line-height: 1.6;
+    }
+    .button-container > button {
+        padding: 35px 35px;
+        font-size: 2rem;
+        margin: 10px;
+        margin-bottom: 10%;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    .nav {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+    .button-container > button {
+        padding: 35px 35px;
+        font-size: 1rem;
+        margin: 10px;
+        margin-bottom: 40%;
+    }
+    
+}

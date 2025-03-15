@@ -1,0 +1,200 @@
+@import url("https://use.typekit.net/pos3sdz.css");
+
+* {
+    color: #c6cdff;
+    animation: fadeIn 1.2s ease-in-out;
+}
+.burger {
+    width: 40px;
+    height: auto;
+    display: none;
+}
+
+.header-title {
+    background-color: #0f6bae;
+    padding: 5px;
+    text-align: center;
+    font-family: verdana, Arial;
+    box-shadow: 0 4px 8px rgba(5, 37, 60, 0.302);
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #83b8ff;
+    text-align: left;
+    font-family: verdana, Arial;
+}
+
+h2 {
+    color: #83b8ff;
+    font-family: verdana, Arial;
+    display: inline-block;
+    border-bottom: 2px solid #83b8ff;
+    padding-bottom: 6px;
+    margin-bottom: 2px;
+    text-align: center;
+}
+
+h3 {
+    color: #83b8ff;
+    font-family: verdana, Arial;
+}
+
+h4 {
+    color: #83b8ff;
+    font-family: verdana, Arial;
+}
+
+p {
+    font-family: verdana, Arial;
+    font-size: 15px;
+    color: #c6cdff;
+}
+
+body {
+    background-image: url('/images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    animation: bodyfadeIn 1s ease-in-out;
+}
+
+footer {
+    height: 40px;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+    flex-shrink: 0;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+    min-height: calc(100vh - 60px);
+    /* Adjust height to account for footer */
+    width: auto;
+}
+
+.card {
+    background-color: #0f6bae;
+    box-shadow: 0 4px 8px #05253c4d;
+    padding: 20px;
+    margin: 20px auto;
+    width: calc(100%);
+    max-width: 60vw;
+    font-family: verdana, Arial;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translate(0px, -2px);
+    box-shadow: 0 6px 10px #05253c80;
+}
+
+.contact-icons-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.contact-icon {
+    width: 20px;
+    height: 20px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 20%;
+    background-color: #83b8ff;
+}
+
+@media screen and (max-width: 768px) {
+    .card {
+        padding: 20px;
+        max-width: 80%;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        filter: blur(1px);
+        opacity: 0;
+    }
+
+    to {
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+li, a, button {
+    font-family: "area-normal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    color: #c6cdff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #333;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px -2px rgb(34, 34, 34);
+}
+
+.nav {
+    list-style: none;
+}
+
+.nav > li {
+    display: inline-block;
+    padding: 2px 20px;
+
+}
+
+.nav > li a {
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+
+.nav > li a:hover {
+    transition: all 0.3s ease 0s;
+    color: rgb(97, 97, 199)
+}
+
+header > a .logo {
+    cursor: pointer;
+    width: 50px;
+    height: auto;
+}
+
+header > button {
+    padding: 9px 25px;
+    background-color: rgb(97, 97, 199);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+header > button:hover {
+    background-color: rgba(97, 97, 199, 0.7);
+}
+@media screen and (max-width: 425px) {
+    .nav {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+    
+}
